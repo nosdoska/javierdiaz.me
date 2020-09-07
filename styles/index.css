@@ -1,0 +1,38 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+.fade-enter {
+  transform: scale(1.1);
+}
+.fade-exit {
+  transform: scale(1);
+}
+.fade-enter-active {
+  transform: scale(1);
+}
+.fade-exit-active {
+  transform: scale(1.1);
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: transofrm 100ms;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+.text-bigest {
+  font-size: 10rem;
+}
+
+/* Your own custom utilities */
