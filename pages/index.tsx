@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import isMobile from "is-mobile";
 
 const COLORS = [
@@ -39,6 +40,10 @@ export default function Home() {
 
   return (
     <>
+    <Head>
+      <meta charSet="utf-8" />
+      <title>Javier Díaz Gómez - Front End Software Engineer</title>
+    </Head>
       <div className="absolute bg-transparent grid grid-cols-3 grid-rows-3 z-10 w-screen h-screen">
         <div onMouseOver={onMouseOver("red")} />
         <div onMouseOver={onMouseOver("blue")} />
